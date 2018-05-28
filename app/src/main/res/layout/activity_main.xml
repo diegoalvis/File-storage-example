@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diegoalvis.filestorage.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="44dp"
+        android:text="File Storage"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="128dp" />
+
+    <Button
+        android:id="@+id/write_file_to_internal_storage"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="84dp"
+        android:text="Write File to Internal Storage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginLeft="56dp" />
+
+    <Button
+        android:id="@+id/read_file_from_internal_storage"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="Read File From Internal Storage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/write_file_to_internal_storage"
+        android:layout_marginLeft="56dp" />
+
+    <Button
+        android:id="@+id/write_file_to_external_storage"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="Write File to External Storage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/read_file_from_internal_storage"
+        android:layout_marginLeft="56dp" />
+
+    <Button
+        android:id="@+id/read_file_from_external_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="Read File From External Storage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/write_file_to_external_storage"
+        android:layout_marginLeft="56dp" />
+</android.support.constraint.ConstraintLayout>
